@@ -8,24 +8,25 @@ Olimpia Milano - Cantù | 55 - 60 -->
 <?php
 $matches = [
         [
-            "SqudraCasa" => "Olimpia Milano",
+            "SquadraCasa" => "Olimpia Milano",
             "SquadraOspite" => "Virtus Bologna",
             "PuntiCasa" => 120,
             "PuntiOspite" => 131
         ],
         [
-            "SqudraCasa" => "Varese",
+            "SquadraCasa" => "Varese",
             "SquadraOspite" => "Pall. Cantù",
             "PuntiCasa" => 99,
             "PuntiOspite" => 102
         ],
         [
-            "SqudraCasa" => "V.L. Pesaro",
+            "SquadraCasa" => "V.L. Pesaro",
             "SquadraOspite" => "Reyes Venezia",
             "PuntiCasa" => 110,
             "PuntiOspite" => 122
         ]
-    ]
+    ];
+$lunghezza = count($matches);
 
 ?>
 
@@ -40,6 +41,10 @@ $matches = [
 </head>
 <body>
 
+  <?php for($i = 0 ; $i < $lunghezza; $i++){?>
+    <h2><?php echo $matches[$i]["SquadraCasa"] ?></h2>
+
+  <?php } ?>
 
 </body>
 </html>
