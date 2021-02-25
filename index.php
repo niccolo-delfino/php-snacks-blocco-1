@@ -11,19 +11,22 @@ $matches = [
             "SquadraCasa" => "Olimpia Milano",
             "SquadraOspite" => "Virtus Bologna",
             "PuntiCasa" => 120,
-            "PuntiOspite" => 131
+            "PuntiOspite" => 131,
+            "Data" => "20/12/2020"
         ],
         [
             "SquadraCasa" => "Varese",
             "SquadraOspite" => "Pall. Cantù",
             "PuntiCasa" => 99,
-            "PuntiOspite" => 102
+            "PuntiOspite" => 102,
+            "Data" => "21/12/2020"
         ],
         [
             "SquadraCasa" => "V.L. Pesaro",
             "SquadraOspite" => "Reyes Venezia",
             "PuntiCasa" => 110,
-            "PuntiOspite" => 122
+            "PuntiOspite" => 122,
+            "Data" => "18/12/2020"
         ]
     ];
 $lunghezza = count($matches);
@@ -42,7 +45,8 @@ $lunghezza = count($matches);
 <body>
 
   <?php for($i = 0 ; $i < $lunghezza; $i++){?>
-    <h2><?php echo $matches[$i]["SquadraCasa"] ?></h2>
+    <h3>Data: <?php echo $matches[$i]["Data"] ?></h3>
+    <p><?php echo $matches[$i]["SquadraCasa"] ?> - <?php echo $matches[$i]["SquadraOspite"] ?> <strong> / Punteggio: </strong><?php echo $matches[$i]["PuntiCasa"] ?> - <?php echo $matches[$i]["PuntiOspite"] ?></p>
 
   <?php } ?>
 
